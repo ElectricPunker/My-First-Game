@@ -259,7 +259,159 @@
 			"title": "Level",
 			"description": "",
 			"isActiveOnStart": true,
-			"children": [],
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 394577938043245
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Player2legs",
+							"sid": 650736783570063,
+							"parameters": {
+								"object": "FadeBlack",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FadeBlack",
+							"sid": 481629024362034,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FadeBlack",
+							"sid": 969843964404353,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "FadeBlack",
+							"sid": 988624750320051,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "0"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "FadeBlack",
+							"sid": 576597150412206,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "0.8"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "FadeBlack",
+							"sid": 231136195685125,
+							"parameters": {
+								"width": "5000000",
+								"height": "5000000"
+							}
+						}
+					],
+					"sid": 470932529860202
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2top",
+							"sid": 943640947701458,
+							"parameters": {
+								"object": "Door1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 516556040262876,
+							"parameters": {
+								"group-name": "\"Controls\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player2legs",
+							"sid": 337270581646512,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Player2top",
+							"sid": 402180042849206,
+							"parameters": {
+								"object": "FadeBlack",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FadeBlack",
+							"sid": 890467217427245,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FadeBlack",
+							"sid": 542919881216209,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "FadeBlack",
+							"sid": 850619921859182,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "0.8"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "FadeBlack",
+							"sid": 182438988672695,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "0"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "FadeBlack",
+							"sid": 622572038136501,
+							"parameters": {
+								"width": "5000000",
+								"height": "5000000"
+							}
+						}
+					],
+					"sid": 322706206587524
+				}
+			],
 			"sid": 924024398843092
 		},
 		{
@@ -292,7 +444,7 @@
 					"conditions": [
 						{
 							"id": "has-los-to-object",
-							"objectClass": "Sprite",
+							"objectClass": "Enemy1",
 							"sid": 229798119825436,
 							"behaviorType": "LineOfSight",
 							"parameters": {
@@ -304,7 +456,7 @@
 					"actions": [
 						{
 							"id": "move-to-object",
-							"objectClass": "Sprite",
+							"objectClass": "Enemy1",
 							"sid": 574912640330973,
 							"behaviorType": "MoveTo",
 							"parameters": {
@@ -315,11 +467,20 @@
 						},
 						{
 							"id": "set-animation",
-							"objectClass": "Sprite",
+							"objectClass": "Enemy1",
 							"sid": 971689503106300,
 							"parameters": {
 								"animation": "\"Animation 2\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-range",
+							"objectClass": "Enemy1",
+							"sid": 141714580720916,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"range": "10000"
 							}
 						}
 					],

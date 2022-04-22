@@ -4,13 +4,7 @@
 	"sid": 261879430869779,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 228128879364911
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
 		"width": 250,
@@ -20,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 2790516,
+		"imageSpriteId": 3214194,
 		"useCollisionPoly": true
 	}
 }

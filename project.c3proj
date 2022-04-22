@@ -96,8 +96,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
+			"id": "Fade",
+			"name": "Fade",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -117,13 +117,19 @@
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "i70fmdpe7ud",
 	"objectTypes": {
-		"items": [
-			"Sprite"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -149,7 +155,8 @@
 						"subfolders": [
 							{
 								"items": [
-									"InsideGround"
+									"InsideGround",
+									"Door1"
 								],
 								"subfolders": [],
 								"name": "Level 1"
@@ -186,7 +193,15 @@
 			},
 			{
 				"items": [],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"FadeBlack"
+						],
+						"subfolders": [],
+						"name": "Transitions"
+					}
+				],
 				"name": "Cutscenes"
 			},
 			{
@@ -210,7 +225,9 @@
 						"name": "Bosses"
 					},
 					{
-						"items": [],
+						"items": [
+							"Enemy1"
+						],
 						"subfolders": [],
 						"name": "Common"
 					},
