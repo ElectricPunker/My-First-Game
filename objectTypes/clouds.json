@@ -1,19 +1,19 @@
 {
 	"name": "Clouds",
 	"plugin-id": "Sprite",
-	"sid": 138256407842808,
+	"sid": 772222046620559,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Bullet",
-			"name": "Bullet",
-			"sid": 508274975886566
-		},
-		{
 			"behaviorId": "wrap",
 			"name": "Wrap",
-			"sid": 801961279247409
+			"sid": 747620037894561
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 584413401375947
 		}
 	],
 	"effectTypes": [],
@@ -29,12 +29,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5871924,
+						"imageSpriteId": 4888987,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 126487092159870,
+				"sid": 904809654772260,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

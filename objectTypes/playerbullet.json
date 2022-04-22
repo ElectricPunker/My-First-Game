@@ -1,10 +1,16 @@
 {
-	"name": "Sky",
+	"name": "Playerbullet",
 	"plugin-id": "Sprite",
-	"sid": 361234528643903,
+	"sid": 890333023099581,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 479231522433999
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9004858,
+						"imageSpriteId": 4707575,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 990830877523100,
+				"sid": 120170513332277,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

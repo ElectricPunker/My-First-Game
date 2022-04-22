@@ -1,10 +1,16 @@
 {
-	"name": "Sky",
+	"name": "CameraCutscene",
 	"plugin-id": "Sprite",
-	"sid": 361234528643903,
+	"sid": 594314543906679,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 238401199558587
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9004858,
+						"imageSpriteId": 973998,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 990830877523100,
+				"sid": 501227789000635,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

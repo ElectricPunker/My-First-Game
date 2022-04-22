@@ -1,37 +1,5 @@
 {
 	"name": "Intro Event sheet",
-	"events": [
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Camera",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 853833597199018
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layout-scale",
-							"objectClass": "System",
-							"sid": 638892400876839,
-							"parameters": {
-								"scale": "1.5"
-							}
-						}
-					],
-					"sid": 807962767409631
-				}
-			],
-			"sid": 449448435133407
-		}
-	],
+	"events": [],
 	"sid": 917566324933125
 }

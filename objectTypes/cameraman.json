@@ -1,10 +1,16 @@
 {
-	"name": "Sky",
+	"name": "Cameraman",
 	"plugin-id": "Sprite",
-	"sid": 361234528643903,
+	"sid": 905251980213423,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 826346310666990
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9004858,
+						"imageSpriteId": 9737804,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 990830877523100,
+				"sid": 497623684074426,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

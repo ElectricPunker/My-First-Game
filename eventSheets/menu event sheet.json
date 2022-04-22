@@ -1,35 +1,5 @@
 {
 	"name": "Menu Event sheet",
-	"events": [
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 806655793412004
-				}
-			],
-			"actions": [
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 235905085525572,
-					"parameters": {
-						"seconds": "5"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Text",
-					"sid": 684728225619193,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 203764167948004
-		}
-	],
+	"events": [],
 	"sid": 215931519160076
 }

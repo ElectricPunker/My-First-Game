@@ -1,0 +1,197 @@
+{
+	"name": "Player2legs",
+	"plugin-id": "Sprite",
+	"sid": 921065005700589,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 264225095991011
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8330902,
+						"collisionPoly": {
+							"points": [
+								0.9166666666666666,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.9166666666666666,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.08333333333333337,
+								0.08333333333333337
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 557847272207856,
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4933214,
+						"collisionPoly": {
+							"points": [
+								0.9166666666666666,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.9166666666666666,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.08333333333333337,
+								0.08333333333333337
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6388878,
+						"collisionPoly": {
+							"points": [
+								0.9166666666666666,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.9166666666666666,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.08333333333333337,
+								0.08333333333333337
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5176951,
+						"collisionPoly": {
+							"points": [
+								0.9166666666666666,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.9166666666666666,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.08333333333333337,
+								0.08333333333333337
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3457272,
+						"collisionPoly": {
+							"points": [
+								0.9166666666666666,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.9166666666666666,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.08333333333333337,
+								0.08333333333333337
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 225154750512401,
+				"name": "Walking",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 300,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9084716,
+						"collisionPoly": {
+							"points": [
+								0.9166666666666666,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.9166666666666666,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.08333333333333337,
+								0.08333333333333337
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 661933929428557,
+				"name": "Shooting",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
