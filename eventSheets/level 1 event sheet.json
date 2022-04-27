@@ -215,6 +215,15 @@
 							"parameters": {
 								"destroy": true
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Player2legs",
+							"sid": 570250117144699,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
 						}
 					],
 					"sid": 844342749813882
