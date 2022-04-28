@@ -196,7 +196,8 @@
 				"subfolders": [
 					{
 						"items": [
-							"FadeBlack"
+							"FadeOutBlack",
+							"FadeInBlack"
 						],
 						"subfolders": [],
 						"name": "Transitions"

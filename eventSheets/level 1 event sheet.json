@@ -284,7 +284,7 @@
 							"objectClass": "Player2legs",
 							"sid": 650736783570063,
 							"parameters": {
-								"object": "FadeBlack",
+								"object": "FadeOutBlack",
 								"layer": "0",
 								"image-point": "0",
 								"create-hierarchy": false
@@ -292,7 +292,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "FadeBlack",
+							"objectClass": "FadeOutBlack",
 							"sid": 481629024362034,
 							"parameters": {
 								"visibility": "visible"
@@ -300,13 +300,13 @@
 						},
 						{
 							"id": "start-fade",
-							"objectClass": "FadeBlack",
+							"objectClass": "FadeOutBlack",
 							"sid": 969843964404353,
 							"behaviorType": "Fade"
 						},
 						{
 							"id": "set-fade-in-time",
-							"objectClass": "FadeBlack",
+							"objectClass": "FadeOutBlack",
 							"sid": 988624750320051,
 							"behaviorType": "Fade",
 							"parameters": {
@@ -315,7 +315,7 @@
 						},
 						{
 							"id": "set-fade-out-time",
-							"objectClass": "FadeBlack",
+							"objectClass": "FadeOutBlack",
 							"sid": 576597150412206,
 							"behaviorType": "Fade",
 							"parameters": {
@@ -324,7 +324,7 @@
 						},
 						{
 							"id": "set-size",
-							"objectClass": "FadeBlack",
+							"objectClass": "FadeOutBlack",
 							"sid": 231136195685125,
 							"parameters": {
 								"width": "5000000",
@@ -366,19 +366,8 @@
 							}
 						},
 						{
-							"id": "spawn-another-object",
-							"objectClass": "Player2top",
-							"sid": 402180042849206,
-							"parameters": {
-								"object": "FadeBlack",
-								"layer": "0",
-								"image-point": "0",
-								"create-hierarchy": false
-							}
-						},
-						{
 							"id": "set-visible",
-							"objectClass": "FadeBlack",
+							"objectClass": "FadeOutBlack",
 							"sid": 890467217427245,
 							"parameters": {
 								"visibility": "visible"
@@ -386,14 +375,14 @@
 						},
 						{
 							"id": "start-fade",
-							"objectClass": "FadeBlack",
-							"sid": 542919881216209,
+							"objectClass": "FadeInBlack",
+							"sid": 421109936885062,
 							"behaviorType": "Fade"
 						},
 						{
 							"id": "set-fade-in-time",
-							"objectClass": "FadeBlack",
-							"sid": 850619921859182,
+							"objectClass": "FadeInBlack",
+							"sid": 254921138463251,
 							"behaviorType": "Fade",
 							"parameters": {
 								"fade-in-time": "0.8"
@@ -401,8 +390,8 @@
 						},
 						{
 							"id": "set-fade-out-time",
-							"objectClass": "FadeBlack",
-							"sid": 182438988672695,
+							"objectClass": "FadeInBlack",
+							"sid": 754046265567916,
 							"behaviorType": "Fade",
 							"parameters": {
 								"fade-out-time": "0"
@@ -410,8 +399,8 @@
 						},
 						{
 							"id": "set-size",
-							"objectClass": "FadeBlack",
-							"sid": 622572038136501,
+							"objectClass": "FadeInBlack",
+							"sid": 859034742858729,
 							"parameters": {
 								"width": "5000000",
 								"height": "5000000"
