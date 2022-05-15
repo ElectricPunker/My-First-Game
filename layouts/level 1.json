@@ -184,7 +184,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "solids",
-								"range": 600,
+								"range": 800,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
