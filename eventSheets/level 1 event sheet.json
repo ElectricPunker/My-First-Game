@@ -25,159 +25,266 @@
 					"isActiveOnStart": true,
 					"children": [
 						{
-							"eventType": "block",
-							"conditions": [
+							"eventType": "group",
+							"disabled": false,
+							"title": "Aim Control",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
 								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 147693602153244,
-									"parameters": {
-										"key": 38
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player2legs",
-									"sid": 816604196954706,
-									"parameters": {
-										"animation": "\"Walking\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 808367009285474
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 835538193799105,
-									"parameters": {
-										"key": 40
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player2legs",
-									"sid": 832840362716320,
-									"parameters": {
-										"animation": "\"Walking\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 250729932115052
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 648790774138861,
-									"parameters": {
-										"key": 37
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player2legs",
-									"sid": 983839020637788,
-									"parameters": {
-										"animation": "\"Walking\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 163026914408907
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 155215079723646,
-									"parameters": {
-										"key": 39
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player2legs",
-									"sid": 868551906541370,
-									"parameters": {
-										"animation": "\"Walking\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 236801651797878
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-click",
-									"objectClass": "Mouse",
-									"sid": 869196769790998,
-									"parameters": {
-										"mouse-button": "left",
-										"click-type": "clicked"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player2top",
-									"sid": 692163234904433,
-									"parameters": {
-										"animation": "\"Shooting\"",
-										"from": "beginning"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "mouse-button-is-down",
+											"objectClass": "Mouse",
+											"sid": 180688640238030,
+											"parameters": {
+												"mouse-button": "right"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "PlayerUnarmed",
+											"sid": 206163959992420
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "PlayerUnarmed",
+											"sid": 392552266591860,
+											"parameters": {
+												"object": "PlayerAiming",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										}
+									],
+									"sid": 632035943934149
 								},
 								{
-									"id": "spawn-another-object",
-									"objectClass": "Player2top",
-									"sid": 312317689794931,
-									"parameters": {
-										"object": "Playerbullet",
-										"layer": "0",
-										"image-point": "1",
-										"create-hierarchy": false
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-button-released",
+											"objectClass": "Mouse",
+											"sid": 835996317084728,
+											"parameters": {
+												"mouse-button": "right"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "PlayerAiming",
+											"sid": 856064766985036
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "PlayerAiming",
+											"sid": 542856349058077,
+											"parameters": {
+												"object": "PlayerUnarmed",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										}
+									],
+									"sid": 401452083680427
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-click",
+											"objectClass": "Mouse",
+											"sid": 466738129676322,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "PlayerAiming",
+											"sid": 983460326963459,
+											"parameters": {
+												"object": "Playerbullet",
+												"layer": "0",
+												"image-point": "1",
+												"create-hierarchy": false
+											}
+										}
+									],
+									"sid": 547996904788395
 								}
 							],
-							"sid": 825385557061529
+							"sid": 947558397412314
 						},
 						{
-							"eventType": "block",
-							"conditions": [
+							"eventType": "group",
+							"disabled": false,
+							"title": "Movement",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
 								{
-									"id": "on-any-key-released",
-									"objectClass": "Keyboard",
-									"sid": 120517555787740
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 200919041574873,
+											"parameters": {
+												"key": 38
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "PlayerUnarmed",
+											"sid": 656122252376026,
+											"parameters": {
+												"animation": "\"Back Movement\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 823600199837428
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-released",
+											"objectClass": "Keyboard",
+											"sid": 913310847353270,
+											"parameters": {
+												"key": 38
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "PlayerUnarmed",
+											"sid": 182683350949680,
+											"parameters": {
+												"animation": "\"Back Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 277347466215187
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 261273264105579,
+											"parameters": {
+												"key": 40
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "PlayerUnarmed",
+											"sid": 952450631146776,
+											"parameters": {
+												"animation": "\"Front Movement\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 659557276518477
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-released",
+											"objectClass": "Keyboard",
+											"sid": 171149874688036,
+											"parameters": {
+												"key": 40
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "PlayerUnarmed",
+											"sid": 549046295721574,
+											"parameters": {
+												"animation": "\"Front Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 263968172408576
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 628634987715087,
+											"parameters": {
+												"key": 37
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "PlayerUnarmed",
+											"sid": 739836099661142,
+											"parameters": {
+												"animation": "\"Left Movement\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 699306751814176
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 619660834474567,
+											"parameters": {
+												"key": 39
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "PlayerUnarmed",
+											"sid": 650969219069488,
+											"parameters": {
+												"animation": "\"Right Movement\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 567498836495297
 								}
 							],
-							"actions": [
-								{
-									"id": "stop-animation",
-									"objectClass": "Player2legs",
-									"sid": 554165693435229
-								}
-							],
-							"sid": 201383383311489
+							"sid": 602200055712783
 						}
 					],
 					"sid": 237191275339478
@@ -191,41 +298,7 @@
 							"sid": 394414797463449
 						}
 					],
-					"actions": [
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Player2top",
-							"sid": 278660469328422,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "Player2legs",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						},
-						{
-							"id": "set-destroy",
-							"objectClass": "Player2top",
-							"sid": 536610282141305,
-							"behaviorType": "Pin",
-							"parameters": {
-								"destroy": true
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Player2legs",
-							"sid": 570250117144699,
-							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 844342749813882
 				},
 				{
@@ -237,26 +310,7 @@
 							"sid": 741531636043921
 						}
 					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "Player2top",
-							"sid": 879533945746844,
-							"parameters": {
-								"x": "Player2legs.x",
-								"y": "Player2legs.Y"
-							}
-						},
-						{
-							"id": "set-angle-toward-position",
-							"objectClass": "Player2top",
-							"sid": 376651839623423,
-							"parameters": {
-								"x": "Mouse.X",
-								"y": "Mouse.Y"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 614208228464134
 				}
 			],
@@ -279,17 +333,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "spawn-another-object",
-							"objectClass": "Player2legs",
-							"sid": 650736783570063,
-							"parameters": {
-								"object": "FadeOutBlack",
-								"layer": "0",
-								"image-point": "0",
-								"create-hierarchy": false
-							}
-						},
 						{
 							"id": "set-visible",
 							"objectClass": "FadeOutBlack",
@@ -339,8 +382,8 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Player2top",
-							"sid": 943640947701458,
+							"objectClass": "PlayerUnarmed",
+							"sid": 930763947737684,
 							"parameters": {
 								"object": "Door1"
 							}
@@ -354,15 +397,6 @@
 							"parameters": {
 								"group-name": "\"Controls\"",
 								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "Player2legs",
-							"sid": 337270581646512,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"state": "disabled"
 							}
 						},
 						{
@@ -439,30 +473,8 @@
 			"children": [
 				{
 					"eventType": "block",
-					"conditions": [
-						{
-							"id": "has-los-to-object",
-							"objectClass": "Enemy1",
-							"sid": 229798119825436,
-							"behaviorType": "LineOfSight",
-							"parameters": {
-								"object": "Player2legs",
-								"image-point": "0"
-							}
-						}
-					],
+					"conditions": [],
 					"actions": [
-						{
-							"id": "move-to-object",
-							"objectClass": "Enemy1",
-							"sid": 574912640330973,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"object": "Player2legs",
-								"image-point": "0",
-								"mode": "direct"
-							}
-						},
 						{
 							"id": "set-animation",
 							"objectClass": "Enemy1",

@@ -48,14 +48,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Pin",
-			"name": "Pin",
-			"author": "Scirra",
-			"version": "r293.3",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
 			"author": "Scirra",
@@ -64,8 +56,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "EightDir",
-			"name": "8 Direction",
+			"id": "Turret",
+			"name": "Turret",
 			"author": "Scirra",
 			"version": "r293.3",
 			"bundled": false
@@ -133,8 +125,8 @@
 		"subfolders": [
 			{
 				"items": [
-					"Player2top",
-					"Player2legs"
+					"PlayerUnarmed",
+					"PlayerAiming"
 				],
 				"subfolders": [],
 				"name": "Characters"
